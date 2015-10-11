@@ -1,0 +1,19 @@
+h1 {
+  text-align: left;
+  margin-left: 13%;
+}
+
+.container td {
+
+  padding: 0.05%;
+}
+
+ .responsive div{
+   max-width: 100%;
+   height: auto;
+ }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
