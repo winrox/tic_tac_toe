@@ -1,0 +1,72 @@
+/* Floated Columns ------------------ */
+
+/*#score,
+#heading {
+  width: 46.5%;
+}*/
+
+#score {
+  width: 87px;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#heading {
+  width: 70%;
+  margin-right: 200px;
+  padding: 31px 10px;
+  margin: 0;
+  text-align: left;
+  float: left;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*----------------------------------*/
+
+.container td {
+  padding: 0.05%;
+}
+
+ .responsive div{
+   max-width: 100%;
+   height: auto;
+ }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*table stylings here*/
+
+table {
+  max-width: 100%;
+  height: auto;
+  background: #30A5BF;
+  border-width: 2px;
+  border-color:  #006666;
+  border-collapse: collapse;
+}
+
+table th {
+  background: #30A5BF;
+  border-style: solid;
+  border-width: 2px;
+  border-color:  #006666;
+  border-collapse: collapse;
+}
+
+table td {
+  text-align: center;
+  background: #30A5BF;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #006666;
+  border-collapse: collapse;
