@@ -8,7 +8,7 @@
   <body class="responsive">
     <h1>Tic Tac Toe</h1>
     <br>
-    <div class="container">
+    <div id="game">
       <table>
         <tr>
           <td><img id="a1" src="img/blank.png" onclick="onClick('a1');"/></td>
@@ -27,6 +27,24 @@
         </tr>
       </table>
     </div>
+    <br>
+    <div id="score">
+        <table>
+          <thead>
+            <tr>
+              <td colspan="2">Score Board</td>
+            </tr>
+          </thead>
+          <tr>
+            <td>X</td>
+            <td>O</td>
+          </tr>
+          <tr>
+            <td><p id="x-score">0</p></td>
+            <td><p id="o-score">0</p></td>
+          </tr>
+        </table>
+      </div>
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/main.js"></script>

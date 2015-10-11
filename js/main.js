@@ -1,4 +1,6 @@
 var clickCounter = 0;
+var scoreX = 0;
+var scoreO = 0;
 
   function isEven(num){
     if (num === 0){
@@ -34,7 +36,7 @@ function onClick(id){
 }
 
 function clearGame(){
-  $('.container tr td img').attr("src", "img/blank.png");
+  $('#game tr td img').attr("src", "img/blank.png");
 }
 
 function findWinner(){
@@ -47,6 +49,8 @@ function findWinner(){
      $('#'+(indexOfWin[2])).attr("src") == "img/X.png"){
       state = true;
       alert("X's have won!!!");
+      scoreX++;
+      $('#x-score').html(scoreX);
       clearGame();
       clickCounter = 0;
     }
@@ -55,10 +59,12 @@ function findWinner(){
             $('#'+(indexOfWin[2])).attr("src") == "img/O.png"){
       state = true;
       alert("O's have won!!!");
+      scoreO++;
+      $('#o-score').html(scoreO);
       clearGame();
       clickCounter = 0;
     }
-    else if(clickCounter == 9 && state == false){
+    else if(clickCounter == 9 && state == false && i == 9){
       alert("CAT Game Over");
       clearGame();
       clickCounter = 0;
