@@ -1,7 +1,34 @@
-h1 {
-  text-align: left;
-  margin-left: 13%;
+/* Floated Columns ------------------ */
+
+/*#score,
+#heading {
+  width: 46.5%;
+}*/
+
+#score {
+  width: 87px;
+  padding: 0;
+  margin: 0;
+  float: left;
 }
+
+#heading {
+  width: 70%;
+  margin-right: 200px;
+  padding: 31px 10px;
+  margin: 0;
+  text-align: left;
+  float: left;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*----------------------------------*/
 
 .container td {
   padding: 0.05%;
