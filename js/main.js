@@ -64,7 +64,7 @@ function findWinner(){
       clearGame();
       clickCounter = 0;
     }
-    else if(clickCounter == 9 && state == false && i == 9){
+    else if(clickCounter == 9 && state == false && i == 7){
       alert("CAT Game Over");
       clearGame();
       clickCounter = 0;
