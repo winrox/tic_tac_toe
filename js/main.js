@@ -32,7 +32,7 @@ function onClick(id){
     console.log("ERROR!");
     clickCounter--;
   }
-  findWinner();
+  window.setTimeout(findWinner(), 1000);
 }
 
 function clearGame(){
