@@ -1,10 +1,5 @@
 /* Floated Columns ------------------ */
 
-/*#score,
-#heading {
-  width: 46.5%;
-}*/
-
 #score {
   width: 87px;
   padding: 0;
@@ -13,12 +8,30 @@
 }
 
 #heading {
-  width: 70%;
+  width: 20%;
   margin-right: 200px;
   padding: 31px 10px;
   margin: 0;
   text-align: left;
   float: left;
+}
+
+#win-message {
+  color: red;
+  float: left;
+}
+
+#replay {
+  float: right;
+  text-align: center;
+  padding: 10px;
+}
+
+#play-again button{
+  float: left;
+  margin-top: 50px;
+  margin-left: 25px;
+  padding: 10px;
 }
 
 /* Float Clearfix ------------------ */

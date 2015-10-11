@@ -48,26 +48,26 @@ function findWinner(){
      $('#'+(indexOfWin[1])).attr("src") == "img/X.png" &&
      $('#'+(indexOfWin[2])).attr("src") == "img/X.png"){
       state = true;
-      alert("X's have won!!!");
+      $('#win-message h1').html("X's have won!!!");
       scoreX++;
       $('#x-score').html(scoreX);
-      clearGame();
-      clickCounter = 0;
     }
     else if($('#'+(indexOfWin[0])).attr("src") == "img/O.png" &&
             $('#'+(indexOfWin[1])).attr("src") == "img/O.png" &&
             $('#'+(indexOfWin[2])).attr("src") == "img/O.png"){
       state = true;
-      alert("O's have won!!!");
+      $('#win-message h1').html("O's have won!!!");;
       scoreO++;
       $('#o-score').html(scoreO);
-      clearGame();
-      clickCounter = 0;
     }
     else if(clickCounter == 9 && state == false && i == 7){
-      alert("CAT Game Over");
-      clearGame();
-      clickCounter = 0;
+      $('#win-message h1').html("CAT! No winner this time!");
     }
   }
+}
+
+function buttonPress() {
+  $('#win-message h1').html('');
+  clearGame();
+  clickCounter = 0;
 }
