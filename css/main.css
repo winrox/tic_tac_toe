@@ -8,15 +8,16 @@
 }
 
 #heading {
-  width: 20%;
-  margin-right: 200px;
-  padding: 31px 10px;
+  width: 15%%;
+  margin-right: 10px;
+  padding: 5px 10px 30px;
   margin: 0;
   text-align: left;
   float: left;
 }
 
 #win-message {
+  padding-top: 30px;
   color: red;
   float: left;
 }
@@ -31,7 +32,9 @@
   float: left;
   margin-top: 50px;
   margin-left: 25px;
-  padding: 10px;
+  padding: 10px 50px;
+  background-color: #30A5BF;
+  font-weight: bold;
 }
 
 /* Float Clearfix ------------------ */

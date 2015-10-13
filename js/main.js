@@ -53,7 +53,7 @@ function findWinner(){
      $('#'+(indexOfWin[1])).attr("src") == "img/X.png" &&
      $('#'+(indexOfWin[2])).attr("src") == "img/X.png"){
       winnerFound = true;
-      $('#win-message h1').html("X's have won!!!");
+      $('#win-message h1').html("X wins!!!");
       scoreX++;
       $('#x-score').html(scoreX);
       $('#play-again').html('<button id="replay" onclick="buttonPress();">Play Again</button>').show();
@@ -62,7 +62,7 @@ function findWinner(){
             $('#'+(indexOfWin[1])).attr("src") == "img/O.png" &&
             $('#'+(indexOfWin[2])).attr("src") == "img/O.png"){
       winnerFound = true;
-      $('#win-message h1').html("O's have won!!!");;
+      $('#win-message h1').html("O wins!!!");
       scoreO++;
       $('#o-score').html(scoreO);
       $('#play-again').html('<button id="replay" onclick="buttonPress();">Play Again</button>').show();
