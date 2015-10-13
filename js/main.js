@@ -23,7 +23,7 @@ function onClick(id){
     clickCounter++;
     var x = isEven(clickCounter); //x knows wether the number of clicks is even or odd and tells the dom to "draw and X or O"
     if($('#'+id).attr("src") != "img/blank.png") {
-      alert("I'm sorry that square is already taken!");
+      $('#win-message h1').html("<p>I'm sorry!<br>That spot is already taken!</p>").show().delay(600).fadeOut();
       clickCounter--;
     }
     else if(x == true){
@@ -53,7 +53,7 @@ function findWinner(){
      $('#'+(indexOfWin[1])).attr("src") == "img/X.png" &&
      $('#'+(indexOfWin[2])).attr("src") == "img/X.png"){
       winnerFound = true;
-      $('#win-message h1').html("X wins!!!");
+      $('#win-message h1').html("X wins!!!").show();
       scoreX++;
       $('#x-score').html(scoreX);
       $('#play-again').html('<button id="replay" onclick="buttonPress();">Play Again</button>').show();
@@ -62,13 +62,13 @@ function findWinner(){
             $('#'+(indexOfWin[1])).attr("src") == "img/O.png" &&
             $('#'+(indexOfWin[2])).attr("src") == "img/O.png"){
       winnerFound = true;
-      $('#win-message h1').html("O wins!!!");
+      $('#win-message h1').html("O wins!!!").show();
       scoreO++;
       $('#o-score').html(scoreO);
       $('#play-again').html('<button id="replay" onclick="buttonPress();">Play Again</button>').show();
     }
     else if(clickCounter == 9 && winnerFound == false && i == 7){
-      $('#win-message h1').html("<p>No winner this time!<br>Please play again.</p>");
+      $('#win-message h1').html("<p>No winner this time!<br>Please play again.</p>").show();
       $('#play-again').html('<button id="replay" onclick="buttonPress();">Play Again</button>').show();
     }
   }
