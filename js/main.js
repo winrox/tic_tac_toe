@@ -23,7 +23,7 @@ function onClick(id){
     clickCounter++;
     var x = isEven(clickCounter); //x knows wether the number of clicks is even or odd and tells the dom to "draw and X or O"
     if($('#'+id).attr("src") != "img/blank.png") {
-      $('#win-message h1').html("<p>I'm sorry!<br>That square has already been taken.</p>").show().delay(600).fadeOut();
+      alert("I'm sorry that square is already taken!");
       clickCounter--;
     }
     else if(x == true){
