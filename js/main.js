@@ -68,7 +68,7 @@ function findWinner(){
       $('#play-again').html('<button id="replay" onclick="buttonPress();">Play Again</button>').show();
     }
     else if(clickCounter == 9 && winnerFound == false && i == 7){
-      $('#win-message h1').html("No winner this time! Please play again.");
+      $('#win-message h1').html("<p>No winner this time!<br>Please play again.</p>");
       $('#play-again').html('<button id="replay" onclick="buttonPress();">Play Again</button>').show();
     }
   }
